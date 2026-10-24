@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furqan Maqsood | Portfolio</title>
+
+    <style>
+        /* Put ALL your CSS code here */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #20242B;
+            color: #FFF9F2;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #20242B;
+            color: #FFF9F2;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        span {
+            color: #C45D3A;
+
+        }
+
+        /* ===== Navigation ===== */
+
+        .navbar {
+            min-height: 50px;
+            border: 1px solid #E9DED2;
+            border-radius: 70px;
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            width: 50%;
+            margin-top: 30px;
+            background-color: #FFFFFF;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            white-space: nowrap;
+
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            color: #343941;
+            gap: 12px;
+        }
+
+        .nav-links a:focus-visible,
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid #E58A62;
+            outline-offset: 4px;
+        }
+
+        /* ===== Hero Section ===== */
+
+        .hero {
+            background-color: #20242B;
+            padding: 90px 0;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .intro,
+        .section-label {
+            color: #C45D3A;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 5vw, 58px);
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .hero h2 {
+            font-size: 23px;
+            margin-bottom: 18px;
+        }
+
+        .description {
+            color: #D8C9BA;
+            max-width: 520px;
+            margin-bottom: 28px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            border: 1px solid #C45D3A;
+            border-radius: 8px;
+            background-color: #C45D3A;
+            color: #ffffff;
+            padding: 12px 22px;
+            font: inherit;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+        }
+
+        .social-links,
+        .social-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 28px;
+        }
+
+        .social-links a,
+        .social-list a {
+            color: #C45D3A;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .hero-image {
+            flex: 0 1 360px;
+        }
+
+        .hero-image img {
+            width: 80%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 50%;
+            /* border: 3px solid white; */
+            background-color: #E9DED2;
+            margin-top: -20%;
+            box-shadow: 0px 0px px white;
+        }
+
+        /* ===== General Sections ===== */
+
+        .section {
+            padding: 75px 0;
+        }
+
+        .section-title {
+            font-size: 34px;
+            line-height: 1.3;
+            margin-bottom: 35px;
+        }
+
+        .about,
+        .projects,
+        .certifications {
+            background-color: #FFF9F2;
+            color: #343941;
+        }
+
+        .about .section-title,
+        .projects .section-title,
+        .certifications .section-title {
+            color: #343941;
+        }
+
+        .skills,
+        .cv-section,
+        .contact {
+            background-color: #20242B;
+        }
+
+        /* ===== About Section ===== */
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 50px;
+        }
+
+        .about-content h3 {
+            font-size: 22px;
+            margin-bottom: 14px;
+        }
+
+        .about-content p {
+            margin-bottom: 16px;
+        }
+
+        .about-details {
+            padding: 25px;
+            background-color: white;
+            border: 1px solid #D8C9BA;
+            border-radius: 12px;
+        }
+
+        .about-details p {
+            margin-bottom: 12px;
+            overflow-wrap: anywhere;
+        }
+
+        .about-details a {
+            color: #C45D3A;
+        }
+
+        /* ===== Cards and Skills ===== */
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #454B54;
+            background-color: #343941;
+            min-width: 0;
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background-color: #FBE5D8;
+            color: #C45D3A;
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #D8C9BA;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .skill-tags span {
+            background-color: #FBE5D8;
+            color: #99452B;
+            padding: 4px 9px;
+            border-radius: 5px;
+            font-size: 11px;
+        }
+
+        .skills .section-title,
+        .cv-section .section-title,
+        .contact .section-title {
+            color: #FFF9F2;
+        }
+
+        /* ===== Project Cards ===== */
+
+        .project-card {
+            background-color: #ffffff;
+            border-color: #E9DED2;
+        }
+
+        .project-card h3,
+        .certificate-card h3 {
+            color: #343941;
+        }
+
+        .project-card p {
+            color: #5C626B;
+        }
+
+        .project-number {
+            font-size: 28px;
+            font-weight: 800;
+            color: #C45D3A;
+            margin-bottom: 12px;
+        }
+
+        .project-type {
+            font-size: 11px !important;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #C45D3A !important;
+        }
+
+        .project-card .skill-tags span,
+        .certificate-card .skill-tags span {
+            background-color: #FBE5D8;
+            color: #C45D3A;
+        }
+
+        .text-link {
+            display: inline-block;
+            margin-top: 6px;
+            color: #C45D3A;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* ===== CV Section ===== */
+
+        .cv-content {
+            display: grid;
+            grid-template-columns: minmax(220px, 0.8fr) 1.2fr;
+            gap: 45px;
+            align-items: start;
+        }
+
+        .cv-image img {
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+            border-radius: 12px;
+            border: 1px solid #D8C9BA;
+            background-color: #E9DED2;
+        }
+
+        .cv-info h3 {
+            font-size: 25px;
+            margin-bottom: 14px;
+        }
+
+        .cv-info h4 {
+            color: #F2B08D;
+            font-size: 17px;
+            margin-top: 22px;
+            margin-bottom: 6px;
+        }
+
+        .cv-info p {
+            color: #D8C9BA;
+            margin-bottom: 12px;
+        }
+
+        .cv-info .btn {
+            margin-top: 18px;
+        }
+
+        /* ===== Certifications ===== */
+
+        .certificate-card {
+            background-color: #ffffff;
+            border-color: #E9DED2;
+        }
+
+        .certificate-card .card-icon {
+            background-color: #FBE5D8;
+            color: #C45D3A;
+        }
+
+        .certificate-card p {
+            color: #5C626B;
+        }
+
+        /* ===== Contact Section ===== */
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 55px;
+        }
+
+        .contact-info h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            color: #D8C9BA;
+            margin-bottom: 22px;
+        }
+
+        .contact-info a {
+            color: #C45D3A;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-form label {
+            font-size: 13px;
+            font-weight: 700;
+            color: #E9DED2;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #5C626B;
+            border-radius: 7px;
+            background-color: #343941;
+            color: #ffffff;
+            font: inherit;
+            font-size: 14px;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #B8A99A;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: 2px solid #C45D3A;
+            outline-offset: 1px;
+        }
+
+        .contact-form .btn {
+            margin-top: 10px;
+        }
+
+        .form-note {
+            color: #B8A99A;
+            font-size: 12px;
+            margin-top: 6px;
+        }
+
+        /* ===== Footer ===== */
+
+        .footer {
+            padding: 28px 0;
+            background-color: #20242B;
+            border-top: 1px solid #454B54;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer p {
+            color: #B8A99A;
+            font-size: 12px;
+            margin-left: 40%;
+        }
+
+        /* ===== Responsive Design ===== */
+
+        @media (max-width: 1000px) {
+            .navbar {
+                padding: 20px 0;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .nav-links {
+                justify-content: flex-start;
+                gap: 14px 20px;
+            }
+
+            .card-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .hero-content {
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                width: 92%;
+            }
+
+            .hero {
+                padding: 55px 0;
+            }
+
+            .hero-content {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+            }
+
+            .hero-image {
+                width: 220px;
+                flex-basis: auto;
+                align-self: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .section {
+                padding: 55px 0;
+            }
+
+            .section-title {
+                font-size: 28px;
+                margin-bottom: 25px;
+            }
+
+            .about-content,
+            .cv-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                gap: 10px 16px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar container">
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cv">My CV</a></li>
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="intro">HELLO, MY NAME IS</p>
+                    <h1>Furqan <span>Maqsood</span></h1>
+                    <h2>Aspirent Network Engineer</h2>
+
+                    <p class="description">
+                        I am a passionate learner who loves understanding computer networks, network security, and IT
+                        infrastructure. I am improving my networking skills and working towards becoming a professional
+                        Network Engineer.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">View My Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/furqan.png.png" alt="Portrait of Riyan Farrukh">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <p class="section-label">GET TO KNOW ME</p>
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about-content">
+                    <div>
+                        <h3>Who Am I?</h3>
+                        <p>
+                            My name is Furqan Maqsood. I am an aspiring
+                            Network Engineer interested in designing,
+                            configuring, and maintaining reliable networks.
+                            I enjoy learning networking technologies,
+                            troubleshooting problems, and understanding
+                            how devices communicate with each other.
+                        </p>
+
+                        <p>
+                            My current learning journey includes computer
+                            networking, CCNA, IP addressing, routing,
+                            switching, and network security. My goal is
+                            to develop strong networking skills and build
+                            a career as a professional Network Engineer.
+                        </p>
+                    </div>
+
+                    <div class="about-details">
+                        <p><strong>Name:</strong> Furqan Maqsood</p>
+                        <p><strong>Role:</strong> Aspiring Netwok Engineer</p>
+                        <p><strong>Location:</strong> Pakistan</p>
+                        <p><strong>Email:</strong>
+                            <a href="mailto:shab90939@gmail.com">
+                              shab90939@gmail.com
+                            </a>
+                        </p>
+                        <p><strong>Status:</strong> Learning and Building</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+<!-- Skills Section -->
+<section class="section skills" id="skills">
+    <div class="container">
+        <p class="section-label">WHAT I AM LEARNING</p>
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="card-grid">
+
+            <article class="card skill-card">
+                <div class="card-icon">IP</div>
+                <h3>IP Addressing</h3>
+                <p>
+                    Learning IPv4 addressing, subnetting,
+                    and how devices communicate within
+                    a network.
+                </p>
+                <div class="skill-tags">
+                    <span>IPv4</span>
+                    <span>Subnetting</span>
+                </div>
+            </article>
+
+            <article class="card skill-card">
+                <div class="card-icon">RT</div>
+                <h3>Routing and Switching</h3>
+                <p>
+                    Learning how routers and switches
+                    connect devices and transfer data
+                    between networks.
+                </p>
+                <div class="skill-tags">
+                    <span>Routing</span>
+                    <span>Switching</span>
+                </div>
+            </article>
+
+            <article class="card skill-card">
+                <div class="card-icon">CC</div>
+                <h3>CCNA Networking</h3>
+                <p>
+                    Studying networking fundamentals,
+                    network devices, protocols, and
+                    basic Cisco configuration.
+                </p>
+                <div class="skill-tags">
+                    <span>CCNA</span>
+                    <span>TCP/IP</span>
+                </div>
+            </article>
+
+            <article class="card skill-card">
+                <div class="card-icon">NS</div>
+                <h3>Network Security</h3>
+                <p>
+                    Learning network security basics,
+                    common threats, and methods used
+                    to protect network communication.
+                </p>
+                <div class="skill-tags">
+                    <span>Security Basics</span>
+                    <span>Firewalls</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- Projects Section -->
+       
+<!-- Projects Section -->
+<section class="section projects" id="projects">
+    <div class="container">
+        <p class="section-label">MY RECENT WORK</p>
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="card-grid">
+
+            <!-- Project 1 -->
+            <article class="card project-card">
+                <div class="project-number">01</div>
+                <p class="project-type">NETWORK DESIGN</p>
+                <h3>Small Office Network Design</h3>
+                <p>
+                    A network design project showing how
+                    computers, switches, and routers can
+                    be connected in a small office network.
+                </p>
+                <div class="skill-tags">
+                    <span>LAN</span>
+                    <span>Network Topology</span>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="card project-card">
+                <div class="project-number">02</div>
+                <p class="project-type">IP ADDRESSING</p>
+                <h3>IP Addressing and Subnetting</h3>
+                <p>
+                    A practice project focused on IPv4
+                    addresses, subnet masks, and dividing
+                    a network into smaller subnets.
+                </p>
+                <div class="skill-tags">
+                    <span>IPv4</span>
+                    <span>Subnetting</span>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="card project-card">
+                <div class="project-number">03</div>
+                <p class="project-type">ROUTING AND SWITCHING</p>
+                <h3>Cisco Packet Tracer Network</h3>
+                <p>
+                    A network simulation project to practice
+                    connecting PCs, configuring switches,
+                    and setting up basic router communication.
+                </p>
+                <div class="skill-tags">
+                    <span>Packet Tracer</span>
+                    <span>CCNA</span>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="card project-card">
+                <div class="project-number">04</div>
+                <p class="project-type">NETWORK SECURITY</p>
+                <h3>Basic Network Security</h3>
+                <p>
+                    A learning project exploring basic
+                    network protection, firewall concepts,
+                    and methods to improve network security.
+                </p>
+                <div class="skill-tags">
+                    <span>Firewalls</span>
+                    <span>Security Basics</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- CV Section -->
+        <section class="section cv-section" id="cv">
+            <div class="container">
+                <p class="section-label">MY BACKGROUND</p>
+                <h2 class="section-title">My Curriculum Vitae</h2>
+
+                <div class="cv-content">
+                    <div class="cv-image">
+                        <img src="images/Furqan_Network_Engineer_Intern_CV.png" alt="Preview of Riyan Farrukh's CV">
+                    </div>
+
+                    <div class="cv-info">
+                        <h3>My Resume</h3>
+                        <p>
+                            My CV includes my education, technical skills,
+                            personal projects, and learning experience.
+                            
+                        </p>
+
+                        <h4>Education</h4>
+                        <p>BS-Computer Science , KUST University</p>
+
+                        <h4>Experience</h4>
+                        <p>
+                            Personal projects and practical development
+                            exercises as I continue learning.
+                        </p>
+
+                        <a href="images/Furqan_Network_Engineer_Intern_CV.pdf" class="btn" target="_blank">
+                            View / Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+<!-- Certifications Section -->
+<section class="section certifications" id="certifications">
+    <div class="container">
+
+        <p class="section-label">MY ACHIEVEMENTS</p>
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="card-grid">
+
+            <article class="card certificate-card">
+
+                <img
+                    src="images/Cisco CCNA Certification Certificate.png"
+                    alt="CCNA Certificate"
+                    class="certificate-img"
+                >
+
+                <h3>CCNA Networking</h3>
+
+                <p>
+                    Cisco Certified Network Associate (CCNA).
+                    Learning networking fundamentals, routing,
+                    switching, and network configuration.
+                </p>
+
+            </article>
+
+        </div>
+    </div>
+</section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <p class="section-label">LET'S CONNECT</p>
+                <h2 class="section-title">Contact Me</h2>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>
+                            Have a project idea, opportunity, or question?
+                            Feel free to reach out to me.
+                        </p>
+
+                        <p>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:shab939@gmail.com">
+                                shab939@gmail.com
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>Location:</strong><br>
+                            Pakistan
+                        </p>
+
+                        <h3>Find Me Online</h3>
+                        <div class="social-list">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="mailto:" method="post" enctype="text/plain">
+
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="Subject" placeholder="Enter the subject">
+
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="Message" rows="6" placeholder="Write your message..."
+                            required></textarea>
+
+                        <button type="submit" class="btn">
+                            Send Message
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <!-- <a href="#home" class="logo">Furqan<span>Maqsood</span></a>
+            <p>Learning today. Building for tomorrow.</p> -->
+            <p>&copy; 2026 Furqan Maqsood. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>
